@@ -1,0 +1,37 @@
+TIME COMPLEXITY - EVALUATION
+
+- count the number of primitive operations exectured in a constant amount of time with a specific input size
+(primitive operation -> assignment to variable or array index, reading from variable/array index, comparing 
+values, context switch - when control is transferred from the calling function to the called function)
+- because of conditionals, we adopt three strategies for analysis: best, average and worst case (but worst case
+is best to use)
+
+BIG O NOTATION FROM BEST TO WORST 
+
+Constant > Logarithmic > Log-square > Root-n > Linear > Linearithmic > Quadratic > Cubic > Quartic > Exponentional > n-Factorial
+
+OTHER TYPES OF ASYMPTOTIC NOTATION 
+
+What about Big Theta, though? Indeed it would be great to have a tight bound on the worst-case running 
+time of an algorithm. Imagine that there is a complex algorithm for which we haven’t yet found a tight 
+bound on the worst-case running time. In such a case, we can’t use Big Theta, but we can still use a loose
+ upper bound (Big O) until a tight bound is discovered. It is common to see Big O being used to 
+ characterize the worst-case running time even for simple algorithms where a Big Theta characterization
+  is easily possible. That is not technically wrong, because Big Theta is a subset of Big O.
+
+Big Omega - tells you your algorithm will grow at least as fast as some other function (as opposed to 
+Big O which tells you your algorithm will grow at most as fast)
+Big Theta - gives you a tight bound between which your algorithm will run 
+
+GENERAL TIPS 
+
+Every time a list or array gets iterated over c \times lengthc×length times, it is most likely in O(n) time.
+When you see a problem where the number of elements in the problem space gets halved each time, that will 
+most probably be in O(log n) runtime.
+Whenever you have a singly nested loop, the problem is most likely in quadratic time.
+
+Nested for loops where the inner loop is dependent on the outer loop tend to be quadratic,
+as opposed to independent loops which would be n*m 
+
+A loop statement that multiplies/divides the loop variable by a constant takes log_k(n)log
+time because the loop runs that many times
