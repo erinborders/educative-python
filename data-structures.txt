@@ -25,7 +25,7 @@ Big Theta - gives you a tight bound between which your algorithm will run
 
 GENERAL TIPS 
 
-Every time a list or array gets iterated over c \times lengthc×length times, it is most likely in O(n) time.
+Every time a list or array gets iterated over c×length times, it is most likely in O(n) time.
 When you see a problem where the number of elements in the problem space gets halved each time, that will 
 most probably be in O(log n) runtime.
 Whenever you have a singly nested loop, the problem is most likely in quadratic time.
