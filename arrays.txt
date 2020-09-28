@@ -1,0 +1,42 @@
+ARRAYS
+
+In Python, an array is just an ordered sequence of homogeneous elements. In other words, 
+an array can only hold elements of one datatype. Python arrays are basically just wrappers 
+for C arrays.
+
+To initialize an array:
+import array
+new_array = array.array('type', [list])
+
+EXAMPLE:
+new_array = array.array('d', [1, 2, 3])
+print(new_array[0])
+
+TYPES OF ARRAYS:
+
+c - character
+b/B, h/H, i, l - integer
+u - unicode character
+I/L - long
+f, d - float
+
+ADDING ELEMENTS TO AN ARRAY:
+
+import array
+integers = array.array('i', [1, 2, 3, 5, 7, 10])
+
+# changing first element
+integers[0] = 0
+print(integers)  # array('i', [0, 2, 3, 5, 7, 10])
+
+# changing 3rd to 5th element
+integers[2:5] = array.array('i', [4, 6, 8])
+print(integers)     # Output: array('i', [0, 2, 4, 6, 8, 10])
+
+Just as with lists, we can add one item to the end of an array using 
+the append() method or add several items using the extend() method.
+
+To delete one or more items from an array, use the del statement as 
+with lists. We can use the remove(val) method to remove the given item 
+or pop(index) to remove an item at the given index. The remove(val) 
+method removes the first element that is equal to val in the array.
