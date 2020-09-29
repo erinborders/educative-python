@@ -1,0 +1,19 @@
+the Internet is a network of networks. Each network is made up of 
+devices, called end systems, connected to each other with communication 
+links. These devices are often also called edge systems in networking 
+jargon because they are technically situated at the ‘edge’ of the 
+Internet since they don’t relay data from one device to another.
+
+Access networks, also known as the last mile, consist of the media 
+through which end systems connect to the Internet. In other words, 
+access networks are networks that physically connect end systems to 
+the first router on a path which connects them to some other end 
+systems.
+
+Some networks have varying upload and download transmission rates, 
+called asymmetric transmission rates. This is useful because traffic 
+going out from end hosts generally consists of small requests which 
+solicit comparatively much larger responses.
+
+A Digital Subscriber Line or DSL uses the existing groundwork of 
+telephone lines for an Internet connection.
