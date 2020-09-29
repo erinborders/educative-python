@@ -194,3 +194,19 @@ def find_minimum(arr):
         if num < min:
             min = num 
     return min
+
+# or can use sort function - python's sort function changes the og list, and is 
+typically logn time complexity
+
+------
+
+Find the first non duplicate in the list 
+
+def find_first_unique(lst):
+    ans = []
+    for num in lst:
+        if num in ans:
+            ans.remove(num)
+        else:
+            ans.append(num)
+    return ans[0]
