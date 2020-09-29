@@ -45,3 +45,43 @@ list[-5]
 
 We can also use slicing techniques on strings since strings are lists of characters! 
 (well, technically, they’re arrays of characters)
+
+LIST COMPREHENSIONS
+
+With list comprehension, checking a condition and appending to the new list can all 
+be done in one line. The code for it starts and ends with a ‘[’ and ends with a ‘]’. 
+The basic syntax is:
+
+newList = [expression(i) for i in oldList if filter(i)]
+
+EXAMPLES:
+Implement a function that removes all even integers from a given list and returns 
+a list of remaining integers 
+
+def remove_even(list):
+    return [num for num in list if num % 2 == 1]
+
+LIST MANIPULATION
+
+Implement a function that merges 2 sorted list into one sorted list 
+
+MY ATTEMPT
+
+def merge_lists(lst1, lst2):
+    shortest = min(len(lst1), len(lst2))
+    a = 0
+    b = 0
+    ans = []
+    for i in range(shortest):
+        print(i)
+        if lst1[a] < lst2[b]:
+            ans.append(lst1[a])
+            a += 1
+        else:
+            ans.append(lst2[b])
+            b += 1
+    if a < len(lst1):
+        return ans + lst1[a:]
+    return ans + lst2[b:]
+
+    
