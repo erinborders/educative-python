@@ -40,3 +40,25 @@ To delete one or more items from an array, use the del statement as
 with lists. We can use the remove(val) method to remove the given item 
 or pop(index) to remove an item at the given index. The remove(val) 
 method removes the first element that is equal to val in the array.
+
+LIST VS ARRAYS 
+
+Python lists are very flexible and can hold completely heterogeneous 
+arbitrary data, but they use a lot more space than Python arrays. Each 
+list contains pointers to a block of pointers, each of which in turn points 
+to a full Python object. 
+
+Because of the way that lists are implemented, elements can be appended 
+to them very efficiently. If you want your collection to grow and shrink in 
+a time-efficient manner, then lists should be used. It’s also better to use 
+lists if you need to manage lots of different data types, however, arrays 
+are better when you need to store a lot of data and perform a large number 
+of computationally intensive mathematical operations. 
+Note that the arrays from the NumPy library of Python are better suited for 
+mathematical use cases.
+
+EXAMPLE:
+
+import numpy as np
+numpy_array = np.array([1, 2, 3])
+print(numpy_array)
