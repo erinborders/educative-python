@@ -172,3 +172,25 @@ def find_sum(lst, k):
             result.append(lst[index2])
             return result
     return False
+
+-----
+
+A list such that each index has a product of all the numbers in the 
+list except the number stored at that index.
+
+def find_product(lst):
+    product = 1
+    for num in lst:
+        product *= num 
+    return [int(product/num) for num in lst]
+
+-----
+
+Find min in array 
+
+def find_minimum(arr):
+    min = arr[0]
+    for num in arr:
+        if num < min:
+            min = num 
+    return min
