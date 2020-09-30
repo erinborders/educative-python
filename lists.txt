@@ -261,3 +261,15 @@ def right_rotate(lst, n):
     # get rotation index
     n = n % len(lst)
     return lst[-n:] + lst[:-n]
+
+----
+
+Rearrange list so that all negative numbers are on left and all
+positives are on right. 
+
+def rearrange(lst):
+    for i in range(len(lst)):
+        if lst[i] < 0:
+            lst.insert(0, lst[i])
+            lst.pop(i+1)
+    return lst
