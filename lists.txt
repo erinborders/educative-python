@@ -282,3 +282,22 @@ in one and positive integers in the other then combine them
 def rearrange(lst):
     # get negative and positive list after filter and then merge
     return [i for i in lst if i < 0] + [i for i in lst if i >= 0]
+
+-----
+
+Given a sorted list, return a list where the max numbers are at
+the even indices in descending order and the min numbers are at 
+the odd indices in ascending order 
+
+def max_min(lst):
+    ans = []
+    start = 0
+    end = len(lst)-1
+    for i in range(len(lst)):
+        if i % 2 == 0:
+            ans.append(lst[end])
+            end -= 1
+        else:
+            ans.append(lst[start])
+            start += 1
+    return ans
