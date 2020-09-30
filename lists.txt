@@ -243,3 +243,14 @@ def find_second_maximum(lst):
        return
    else:
        return second_max
+
+------
+
+Take a list and rotate it right by n 
+
+def right_rotate(lst, n):
+    length = len(lst)
+    index = len(lst)-1
+    for i in range(n):
+        lst.insert(0, lst[index])
+    return lst[:length]
