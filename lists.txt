@@ -223,3 +223,23 @@ def find_second_maximum(lst):
         if lst[index2] == lst[index1]:
             index2 -= 1
     return lst[index2]
+
+# their solution in one traversal
+
+def find_second_maximum(lst):
+   if (len(lst) < 2):
+       return
+   # initialize the two to infinity
+   max = second_max = float('-inf')
+   for i in range(len(lst)):
+       # update the max max if max value found
+       if (lst[i] > max):
+           second_max = max
+           max = lst[i]
+       # check if it is the second_max max and not equal to max
+       elif (lst[i] > second_max and lst[i] != max):
+           second_max = lst[i]
+   if (second_max == float('-inf')):
+       return
+   else:
+       return second_max
