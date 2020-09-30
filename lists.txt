@@ -254,3 +254,10 @@ def right_rotate(lst, n):
     for i in range(n):
         lst.insert(0, lst[index])
     return lst[:length]
+
+# their solution 
+
+def right_rotate(lst, n):
+    # get rotation index
+    n = n % len(lst)
+    return lst[-n:] + lst[:-n]
