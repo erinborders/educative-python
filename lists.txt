@@ -301,3 +301,7 @@ def max_min(lst):
             ans.append(lst[start])
             start += 1
     return ans
+
+# their solution, you don't need the if condition because you
+can just add the orders in the number they're supposed to be 
+added (max first then min) and iterate through half the list
