@@ -279,3 +279,6 @@ encounter a negative element, we simply swap it with the leftmost
 positive element OR create 2 empty lists and put negative integers
 in one and positive integers in the other then combine them
 
+def rearrange(lst):
+    # get negative and positive list after filter and then merge
+    return [i for i in lst if i < 0] + [i for i in lst if i >= 0]
