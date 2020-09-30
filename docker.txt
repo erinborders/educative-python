@@ -1,0 +1,7 @@
+DOCKER BASICS
+
+docker run <image> 
+    1. finds image either locally or from online registry
+    2. run's the container and whatever commands are inside
+    3. closes the container 
+
