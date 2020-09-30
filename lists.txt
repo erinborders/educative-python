@@ -273,3 +273,9 @@ def rearrange(lst):
             lst.insert(0, lst[i])
             lst.pop(i+1)
     return lst
+
+# their solution = iterate over the entire list and, if we 
+encounter a negative element, we simply swap it with the leftmost 
+positive element OR create 2 empty lists and put negative integers
+in one and positive integers in the other then combine them
+
