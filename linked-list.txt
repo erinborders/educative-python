@@ -1,2 +1,16 @@
 SINGLY LINKED LISTS
 
+Two classes needed to implement a singly linked list:
+Node Class
+LinkedList Class
+
+NODE CLASS 
+
+Contains data and a pointer to next node or None
+
+EXAMPLE:
+
+class Node:
+    def __init__(self, data):
+        self.data = data  # Data field
+        self.next_element = None  # Pointer to next node
