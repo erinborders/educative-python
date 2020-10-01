@@ -32,3 +32,18 @@ EXAMPLE:
 class LinkedList:
     def __init__(self):
         self.head_node = None  # Pointer to first node
+
+LINKED LISTS VS LISTS 
+
+The main difference between lists and linked lists is in the way 
+elements are inserted and deleted. As for linked lists, insertion 
+and deletion happen in a constant amount of time, while in the 
+case of lists, it takes O(n) time to insert or delete a value. 
+This is because of the different memory layout of both the data 
+structures. Lists are arranged contiguously in the memory, while 
+nodes of a linked list may be dispersed in the memory. This memory 
+layout also affects access operation; contiguous layout of lists 
+allows us to index the list thus access operation in list is O(1), 
+whereas for a linked list we need to perform a traversal thus it 
+becomes O(n).
+
