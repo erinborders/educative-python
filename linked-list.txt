@@ -14,3 +14,21 @@ class Node:
     def __init__(self, data):
         self.data = data  # Data field
         self.next_element = None  # Pointer to next node
+
+LINKED LIST CLASS 
+
+The linked list itself is a collection of Node objects which we 
+defined above. To keep track of the list, we need a pointer to 
+the first node in the list.
+
+This is where the principle of the head node comes in. The head 
+does not contain any data and only points to the beginning of the 
+list. This means that, for any operations on the list, we need 
+to traverse it from the head (the start of the list) to reach 
+our desired node in the list.
+
+EXAMPLE:
+
+class LinkedList:
+    def __init__(self):
+        self.head_node = None  # Pointer to first node
