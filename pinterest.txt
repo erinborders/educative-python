@@ -1,0 +1,36 @@
+PINTEREST CODING INTERVIEW
+
+PHASES:
+phone screen
+technical screen ~ 1 hour --> some behavioral elements but mostly coding
+full day final round ~ 4+ hours --> primarily coding interviews, and possibly 
+system design
+
+STEPS
+focus --> what role are you interviewing for? (typically general full stack)
+be cognizant of hiring cycles for interns/new grads
+compile resources that focus on getting you prepared for coding interviews
+10-15 hours a week for 1-2 months to prepare for technical interviews
+select problems with a difficulty that mirrors real interviews (medium, hard)
+attempt problems for at least 30 minutes
+
+FUNDAMENTALS TO STUDY
+- merge, quick, breadth-first, depth-first, and binary search
+- arrays, lists, linked lists, hash tables, trees, graphs, stacks and queues, heaps
+- big o, recursion
+
+PROBLEM APPROACHES
+pattern matching, simplify and generalize, base case and build, data structure 
+brain dump
+
+Things to ask yourself: what data structures can I use to make this easier?
+
+RESOURCES
+Notes: Notion
+CS fundamentals: CMU 15-112, Stanford 106b, Khan Academy - Algorithms, Google TechDev Guide
+Quizzes/Assessments: GeeksforGeeks, TripleByte, LinkedIn Skills Assessment
+interview prep: interview cake
+practice problems: coderbyte
+mock interviews: pramp, interviewing.io
+
+
