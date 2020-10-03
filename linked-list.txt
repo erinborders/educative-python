@@ -56,3 +56,17 @@ delete(data) - deletes an element with your specified value from the linked list
 delete_at_head() - deletes the first element of the list
 search(data) - searches for an element with the specified value in the linked list
 is_empty() - returns true if the linked list is empty
+
+GET HEAD EXAMPLE:
+
+class LinkedList:
+    def __init__(self):
+        self.head_node = None
+
+    def get_head(self):
+        return self.head_node
+
+
+lst = LinkedList()  # Linked List created
+print(lst.get_head())  # Returns None since headNode does not contain any data
+
