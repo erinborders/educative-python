@@ -98,13 +98,45 @@ INSERTION
 
 1. AT HEAD 
 
-    # Insertion at Head
-    def insert_at_head(self, data):
-        # Create a new node containing your specified value
-        temp_node = Node(data)
-        # The new node points to the same node as the head
-        temp_node.next_element = self.head_node
-        self.head_node = temp_node  # Make the head point to the new node
-        return self.head_node  # return the new list
+# Insertion at Head
+def insert_at_head(self, data):
+    # Create a new node containing your specified value
+    temp_node = Node(data)
+    # The new node points to the same node as the head
+    temp_node.next_element = self.head_node
+    self.head_node = temp_node  # Make the head point to the new node
+    return self.head_node  # return the new list
 
-2. 
+2. AT TAIL 
+
+# My solution
+
+def insert_at_tail(lst, value):
+    # Write - Your - Code
+    temp_node = Node(value)
+    runner = lst.get_head()
+
+    while runner.next_element is not None:
+        runner = runner.next_element
+    runner.next_element = temp_node
+
+# Their solution 
+
+def insert_at_tail(lst, value):
+    # Creating a new node
+    new_node = Node(value)
+
+    # Check if the list is empty, if it is simply point head to new node
+    if lst.get_head() is None:
+        lst.head_node = new_node
+        return
+
+    # if list not empty, traverse the list to the last node
+    temp = lst.get_head()
+
+    while temp.next_element:
+        temp = temp.next_element
+
+    # Set the nextElement of the previous node to new node
+    temp.next_element = new_node
+    return
