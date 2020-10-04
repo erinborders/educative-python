@@ -76,3 +76,17 @@ class LinkedList:
 lst = LinkedList()  # Linked List created
 print(lst.get_head())  # Returns None since headNode does not contain any data
 
+INSERTION
+
+1. AT HEAD 
+
+    # Insertion at Head
+    def insert_at_head(self, data):
+        # Create a new node containing your specified value
+        temp_node = Node(data)
+        # The new node points to the same node as the head
+        temp_node.next_element = self.head_node
+        self.head_node = temp_node  # Make the head point to the new node
+        return self.head_node  # return the new list
+
+2. 
