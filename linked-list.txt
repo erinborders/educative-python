@@ -158,7 +158,7 @@ def insert_at_k(lst, value, k):
         lst.head_node = temp_node
         return 
     
-    runner = lst.get_head
+    runner = lst.get_head()
 
     counter = 1
     while counter < k and runner.next_element is not None:
@@ -166,3 +166,34 @@ def insert_at_k(lst, value, k):
     
     runner.next_element = temp_node
     return
+
+SEARCH FUNCTION 
+
+# My solution, iterative:
+
+def search(lst, value):
+    # Write your code here
+    if lst.get_head() is None:
+        return False
+    
+    runner = lst.get_head()
+    while runner.next_element is not None:
+        if runner.data == value:
+            return True
+        runner = runner.next_element
+    return False
+
+# Their solution, recursive (note that it takes a node as a parameter):
+
+def search(node, value):
+
+    # Base case
+    if(not node):
+        return False  # value not found
+
+    # check if the node's data matches our value
+    if(node.data is value):
+        return True  # value found
+
+    # Recursive call to next node in the list
+    return search(node.next_element, value)
