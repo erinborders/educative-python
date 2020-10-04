@@ -140,3 +140,29 @@ def insert_at_tail(lst, value):
     # Set the nextElement of the previous node to new node
     temp.next_element = new_node
     return
+
+3. INSERT AT KTH POSITION
+
+Insertion at the kth Position, is just an extension of these two. 
+If you need to insert a node at a specific index in the list, 
+simply iterate to that position and appropriately switch pointers. 
+Try it out on your own.
+
+def insert_at_k(lst, value, k):
+    temp_node = Node(value)
+
+    # would have to determine what you want to happen if the 
+    list isn't k nodes long
+
+    if lst.get_head() is None:
+        lst.head_node = temp_node
+        return 
+    
+    runner = lst.get_head
+
+    counter = 1
+    while counter < k and runner.next_element is not None:
+        runner = runner.next_element
+    
+    runner.next_element = temp_node
+    return
