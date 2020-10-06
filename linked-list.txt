@@ -222,13 +222,18 @@ def delete_at_head(lst):
     return
 
 
-lst = LinkedList()
-for i in range(11):
-    lst.insert_at_head(i)
+# DELETE BY VALUE 
+# My solution 
 
-lst.print_list()
-
-delete_at_head(lst)
-delete_at_head(lst)
-
-lst.print_list()
+def delete(lst, value):
+    if lst.get_head() is not None:
+        runner = lst.get_head()
+        if value == runner.data:
+            lst.delete_at_head()
+            return True
+        else:
+            while runner.next_element is not None:
+                if runner.next_element.data == value:
+                    runner.next_element = runner.next_element.next_element
+                    return True
+    return False
