@@ -201,6 +201,11 @@ def search(node, value):
 
 DELETION 
 
+3 kinds:
+1. deletion at heaad
+2. deletion by value 
+3. deletion at tail
+
 from LinkedList import LinkedList
 from Node import Node
 
