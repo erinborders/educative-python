@@ -1,0 +1,25 @@
+THE ONLY DIFFERENCE BETWEEN SLL AND DLL
+
+class Node:
+    def __init__(self, value):
+        self.data = value  # Stores data
+        self.previous_element = None  # Stores pointer to previous element
+        self.next_element = None  # Stores pointer to next element
+
+HOW THE DELETION METHOD CHANGES WITH A DLL 
+
+# Traversing/Searching for node to Delete
+while current_node:
+    if value is current_node.data:
+        if current_node.next_element:
+            # Link the next node and the previous node to each other
+            prev_node = current_node.previous_element
+            next_node = current_node.next_element
+            prev_node.next_element = next_node
+            next_node.previous_element = prev_node
+            # previous node pointer was maintained in Singly Linked List
+
+        else:
+            current_node.previous_element.next_element = None
+        deleted = True
+        break
