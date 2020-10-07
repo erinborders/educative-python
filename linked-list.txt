@@ -237,3 +237,7 @@ def delete(lst, value):
                     runner.next_element = runner.next_element.next_element
                     return True
     return False
+
+# their solution = if you want to use the search function, keep a runner to keep 
+track of previous node 
+
