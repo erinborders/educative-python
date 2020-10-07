@@ -35,3 +35,10 @@ lists as we do not need to keep track of the previous node. We already have a ba
 pointer for it. At this point, we’ve compared the two major types of linked lists. 
 The minor memory load that comes with DLLs can be forgone because of the convenience 
 they provide.
+
+TAIL POINTER FUNCTIONALITY
+
+class LinkedList:
+    def __init__(self):
+        self.head_node = None
+        self.tail_node = None  # Keep track of the last
