@@ -71,3 +71,19 @@ def length(lst):
         length += 1
         curr = curr.next_element
     return length
+
+REVERSE LINKED LIST 
+
+def reverse(lst):
+  # Write your code here
+  reversed_list = LinkedList()
+
+  runner = lst.get_head()
+  if runner:
+    reversed_list.insert_at_head(runner.data) # this works because of the way insert at head was set up
+    while runner.next_element is not None:
+      runner = runner.next_element
+      reversed_list.insert_at_head(runner.data)
+  
+  return reversed_list
+
