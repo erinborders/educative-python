@@ -42,3 +42,20 @@ class LinkedList:
     def __init__(self):
         self.head_node = None
         self.tail_node = None  # Keep track of the last
+
+GET LENGTH METHOD 
+
+# My solution 
+
+def length(lst):
+    # Write - Your - Code
+    count = 0
+    
+    if lst.get_head() is not None:
+        runner = lst.get_head()
+        count += 1
+        while runner.next_element is not None:
+            count += 1
+            runner = runner.next_element
+    return count
+
