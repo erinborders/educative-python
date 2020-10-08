@@ -108,4 +108,18 @@ def reverse(lst):
 
   DETECT LOOP
 
-  
+  # my solution (i needed a hint about having a walker and 
+  a runner)
+
+  def detect_loop(lst):
+    # Write your code here
+    walker = lst.get_head()
+    runner = lst.get_head()
+
+    while walker and runner:
+        runner = runner.next_element.next_element
+        if walker == runner:
+            return True
+        walker = walker.next_element
+    
+    return False
