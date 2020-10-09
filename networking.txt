@@ -50,3 +50,16 @@ of a bunch of star networks connected together with a large bus.
 
 - Mesh: every end system is directly connected to every other end system. But it's 
 expensive, hard to scale and used in specialized applications only.
+
+THE OPEN SYSTEMS INTERCONNECTION (OSI) MODEL
+
+Each layer provides some services to the layer above it. Furthermore, the layer above 
+is not concerned with the details of how the layer below performs its services. This 
+is called abstraction. So in this way, the layers communicate with each other in a 
+vertical fashion.
+
+applications in the application layer send and receive data from the network. The 
+application layer on one end system has a parallel on another end system, i.e., a 
+chat app on one end system could be communicating with a chat app on another. These 
+applications in the application layer are seemingly communicating with each other 
+directly or horizontally. They are not aware of the layer below.
