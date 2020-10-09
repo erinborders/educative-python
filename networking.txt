@@ -51,6 +51,12 @@ of a bunch of star networks connected together with a large bus.
 - Mesh: every end system is directly connected to every other end system. But it's 
 expensive, hard to scale and used in specialized applications only.
 
+COMPUTER NETWORKING MODELS
+
+There are several models along which computer networks are organized. The two most 
+common ones are the Open Systems Interconnection (OSI) model and the Transmission 
+Control Protocol/Internet Protocol (TCP/IP) model.
+
 THE OPEN SYSTEMS INTERCONNECTION (OSI) MODEL
 
 Each layer provides some services to the layer above it. Furthermore, the layer above 
@@ -63,3 +69,53 @@ application layer on one end system has a parallel on another end system, i.e., 
 chat app on one end system could be communicating with a chat app on another. These 
 applications in the application layer are seemingly communicating with each other 
 directly or horizontally. They are not aware of the layer below.
+
+The model splits up a communication system into 7 abstract layers, stacked upon each 
+other:
+
+7. Application 
+    - almost always implemented in software
+    - end users interact with this
+    - where most end-user apps like web browsing and email live
+    - where an outgoing message starts its journey os it provides data for the layer below
+6. Presentation 
+    - presents data in a way that can be understood and displayed by the app layer (e.g. 
+    encoding - the underlying layers might use a different character encoding compared to 
+    the one used by the app layer so the presentation layer is responsible for translation)
+    - encryption done at this layer 
+    - abstracts by transforming content presentation to suit the application 
+    - might implement end to end compression to reduce the traffic in the network 
+5. Session 
+    - build on top of the transport layer with a service that manages user sessions; manages 
+    the mapping of messages delivered by the transport layer to the sessions 
+    - session = an exchange of info between local applications and remote services on other
+    end systems (e.g. one session spans a customer's interaction with an ecommerce site, everything
+    from search to payment and logout)
+4. Transport
+    - implemented largely in software 
+    - segments the large chunks of data that the app, presentation and session layers might 
+    be handling into more manageable chunks (aka datagrams or segments)
+    - adds additional info to segment/datagram when needed (e.g. checksum - helps ensure 
+    that the message is correctly delivered to the destination without being corrupted or changed;
+    when additional info is added to the start of a segment/datagram, it's called a header;
+    when added to the end, it's called a trailer)
+3. Network 
+    - messages at this layer are called packets (packetizes the segments/datagrams)
+    - this layer facilitates the transportation of packets and help determine the best routes 
+    that packets should take
+    - routing protocols = apps that run on the network layer and exchange messages with each
+    other to develop info that helps them route packets 
+    - load balancing = makes sure links in a given network are being utilized equally
+2. Data Link 
+    - lets directly connected hosts to communicate; addresses flow control and error
+    detection/correction
+    - encapsulates packets for transmission (turning bits into packets)
+    - resolves transmission conflicts, (i.e. when 2 end systems send a message at the same
+    time across one link)
+    - handles addressing (if the data link is a broadcast medium)
+    - multiplexing and demultiplexing = combining multiple data links into something that seems 
+    like one to integrate their bandwidth or disaggregate a single data link into virtual 
+    data links which appear like separate network interfaces respectively
+1. Physical 
+    - consists largely of hardware that exists to transmit bits (data, but not packets, datagrams 
+    or segments)
