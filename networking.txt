@@ -17,3 +17,36 @@ solicit comparatively much larger responses.
 
 A Digital Subscriber Line or DSL uses the existing groundwork of 
 telephone lines for an Internet connection.
+
+
+Computers or end systems are generally connected together to share resources 
+and information such as an Internet connection and devices such as printers. 
+These networks can be classified by the geographical distance that they span:
+- Local Area Networks (LAN)/Wireless Local Area Networks (WLAN)
+- Metropolitan Area Networks (MAN)
+- Wide Area Networks (WAN - typically optical fiber-based)
+
+Synchronous optical networking (SONET) and the international equivalent, Synchronous 
+Digital Hierarchy (SDH) carries data as optical signals over optical fiber, which 
+means that they can cover large distances.
+
+NETWORK TOPOLOGIES
+(how the data flows in the network)
+
+- Bus: Every end system will receive any signal that is sent on the main or backbone 
+medium. But a break in the cable will disable the whole thing and only one system
+can transmit at a time
+
+- Ring: end systems communicate with each other through each other. So the message 
+travels along the ring passing each system until the target system itself is reached.
+But data flow is unidirectional and a break in the cable would still disrupt the system.
+
+- Star: All end systems talk to each other through one central device such as a router 
+or switch. All hosts can transmit at the same time but if the router fails then the 
+network is completely down.
+
+- Tree: This topology is also known as the star-bus topology. It essentially consists 
+of a bunch of star networks connected together with a large bus.
+
+- Mesh: every end system is directly connected to every other end system. But it's 
+expensive, hard to scale and used in specialized applications only.
