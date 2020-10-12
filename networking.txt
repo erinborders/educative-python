@@ -143,3 +143,9 @@ Implementing intelligence in the core was too expensive, therefore, intelligence
 implemented at edge devices. So, the Internet’s design was of intelligent end devices 
 and a dumb and fast core network.
 
+Furthermore, the core was made packet-switched, which means that packets are routed 
+per-hop, so they can circumvent failures because the requirement was for resilience.
+
+With circuit-switched networks, however, torn connections have to be re-established, 
+if there is still a path.
+
