@@ -134,3 +134,12 @@ TRANSMISSION CONTROL PROTOCOL/INTERNET PROTOCOL (TCP/IP) MODEL
 
  TCP/IP is used PRACTICALLY and OSI  is more CONCEPTUAL.
 
+ END TO END ARGUMENT
+
+ The TCP/IP protocol suite is heavily influenced by the following design choice, also 
+ known as the end-to-end argument.
+
+Implementing intelligence in the core was too expensive, therefore, intelligence was 
+implemented at edge devices. So, the Internet’s design was of intelligent end devices 
+and a dumb and fast core network.
+
