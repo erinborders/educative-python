@@ -124,7 +124,7 @@ other:
 TRANSMISSION CONTROL PROTOCOL/INTERNET PROTOCOL (TCP/IP) MODEL 
 
 5 layers:
- 5. Application 
+ 5. Application - combines application, presentation and session layers from OSI model 
  4. Transport 
  3. Network 
  2. Data Link 
