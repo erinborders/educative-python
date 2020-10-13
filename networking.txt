@@ -149,3 +149,12 @@ per-hop, so they can circumvent failures because the requirement was for resilie
 With circuit-switched networks, however, torn connections have to be re-established, 
 if there is still a path.
 
+APPLICATION LAYER RESPONSIBILITIES
+
+Writing data off to the network in a format that is compliant with the protocol in use.
+Reading data from the end-user.
+Providing useful applications to end users.
+
+Analogy = Carrying the package to the post office is what the application layer does in 
+networks, except that it carries messages to the transport layer!
+
