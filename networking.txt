@@ -158,3 +158,7 @@ Providing useful applications to end users.
 Analogy = Carrying the package to the post office is what the application layer does in 
 networks, except that it carries messages to the transport layer!
 
+NETWORK APPLICATION ARCHITECTURES
+- client + server architecture 
+- peer-to-peer architecture (every end system can be both client and server)
+
