@@ -161,4 +161,9 @@ networks, except that it carries messages to the transport layer!
 NETWORK APPLICATION ARCHITECTURES
 - client + server architecture 
 - peer-to-peer architecture (every end system can be both client and server)
+    - P2P networks are extremely mathematically scalable. The resources of a P2P system 
+    grows with the number of peers in the system. Thus, applications with P2P 
+    architecture are self-scaling.
+
+
 
