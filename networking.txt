@@ -165,5 +165,9 @@ NETWORK APPLICATION ARCHITECTURES
     grows with the number of peers in the system. Thus, applications with P2P 
     architecture are self-scaling.
 
+SOCKETS
 
+Processes on different machines send messages to each other through the computer network. 
+The interface between a process and the computer network is called a socket.
+Processes simply direct their messages to sockets and don’t worry about it after that.
 
