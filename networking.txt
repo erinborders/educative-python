@@ -171,3 +171,12 @@ Processes on different machines send messages to each other through the computer
 The interface between a process and the computer network is called a socket.
 Processes simply direct their messages to sockets and don’t worry about it after that.
 
+PORTS 
+
+ Ephemeral Ports = different port numbers are dynamically generated for each instance 
+ of an application. The port is freed once the application is done using it.
+
+Furthermore, server processes need to have well defined and fixed port numbers so that 
+clients can connect to them in a systematic and predictable way but clients don’t need 
+to have reserved ports. They can use ephemeral ports.
+
